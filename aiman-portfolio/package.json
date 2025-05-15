@@ -2,7 +2,8 @@
   "name": "aiman-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aimee1230.github.io/Portfolio",
+ "homepage": "https://aimee1230.github.io/Portfolio",
+
   "dependencies": {
     "@react-spring/web": "^9.7.5",
     "@testing-library/dom": "^10.4.0",
