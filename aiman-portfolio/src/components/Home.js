@@ -10,20 +10,23 @@ export default function Home() {
         {/* Left section */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl md:text-3xl font-bold text-[#0A9396] mb-4">
-            AI Engineer & Data Scientist
+            Machine Learning Engineer | AI Enthusiast 
           </h1>
           <p className="text-justify mb-6">
-            Imagine a world where a curious mind and an AI-powered heart work together to solve real-world problems — that’s my world. I'm Aiman — an AI explorer, tech storyteller, and problem-solver on a mission to shape a smarter, safer, and more meaningful future.
+            Imagine a world where AI transforms complex challenges into meaningful solutions—that's the future I'm passionate about building. I'm Aiman, a Machine Learning Engineer specializing in Computer Vision, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and Multi-Agent AI systems, dedicated to developing intelligent solutions that create real-world impact.e.
           </p>
 
           {/* Tags under text */}
           <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start animate-fade-in-slow">
             {[
-              "Artificial Intelligence",
               "Machine Learning",
               "Deep Learning",
               "Natural Language Processing",
               "Data Science",
+              "LLMs",
+              "Computer Vision",
+              "RAG",
+              "Agentic AI",
             ].map((tag, idx) => (
               <span
                   key={idx}

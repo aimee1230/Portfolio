@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Element, Link } from 'react-scroll';  // Named imports for Element and Link
+import { Element } from 'react-scroll';  // Named import for Element
 import Welcome from "./components/Welcome";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -16,24 +17,38 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900">
+    <div className="bg-[#212529] min-h-screen text-white">
       {showWelcome ? (
         <Welcome />
       ) : (
         <>
+          {/* Navbar sits safely at the top level */}
           <Navbar />
-          <Element name="Home">
-            <Home />
-          </Element>
-          <Element name="About">
-            <About />
-          </Element>
-          <Element name="Projects">
-            <Projects />
-          </Element>
-          <Element name="Contact">
-            <Contact />
-          </Element>
+          
+          {/* Standard scroll container so window scrolling and react-scroll work perfectly */}
+          <main className="w-full">
+            
+            <Element name="Home">
+              <Home />
+            </Element>
+
+            <Element name="About">
+              <About />
+            </Element>
+
+            <Element name="Experience">
+              <Experience />
+            </Element>
+
+            <Element name="Projects">
+              <Projects />
+            </Element>
+
+            <Element name="Contact">
+              <Contact />
+            </Element>
+
+          </main>
         </>
       )}
     </div>
